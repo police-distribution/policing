@@ -41,8 +41,6 @@ offence_by_month %>%
     theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5), legend.position = "none")
 ```
 
-So that all works. Cool.
-
 Now we need to go and get the police strength (staffing) figures. The datasets
 are a bit of a mess, with a mix of HTML pages and PDFs, and with a constantly 
 changing web address. I've manually worked through all of these issues and kept
@@ -265,8 +263,8 @@ plot_lga("Mosman")
 
 One thing we can do to drill down further on this is to group together similar
 types of crimes. This is going to be a very plot-heavy affair, so we're going to
-generate them programmatically and make Tim go through them manually. Sucker!
-Groupings provided by Tim.
+generate them programmatically.
+
 
 ```{r}
 groupings <- list(
